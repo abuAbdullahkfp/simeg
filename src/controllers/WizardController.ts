@@ -7,7 +7,7 @@ import { GetAnswersParams } from "../types/request/get-answers-request"
 const WizardController = (): WizardControllerT => {
 
   const getQuestions = async (req: Request<{}, {}, PostAnswersReqBody, {}, {}>, res: Response) => {
-    
+    res.status(200).json('hello world')
   }
   const postAnswers = async (req: Request, res: Response) => {
 
